@@ -1,0 +1,142 @@
+{
+  "developer": {
+    "id": "Rmx21",
+    "name": "Juan Monrroy",
+    "interview_date": "2025-01-26",
+    "interview_time": "15:30"
+  },
+  "repositories_analyzed": [
+    {
+      "name": "events-manager",
+      "full_name": "Rmx21/events-manager",
+      "primary_language": "TypeScript",
+      "framework": "Next.js",
+      "total_commits": 112,
+      "last_activity": "2025-08-26",
+      "key_technologies": [
+        "Next.js",
+        "TypeScript", 
+        "Tailwind CSS",
+        "Drizzle ORM",
+        "PostgreSQL (Neon)",
+        "React Hook Form",
+        "Radix UI",
+        "jsPDF",
+        "react-signature-canvas",
+        "AWS Amplify"
+      ],
+      "decision_rationale": {
+        "framework_choice": {
+          "question": "¿Por qué decidiste usar Next.js como framework principal para el proyecto Events Manager en lugar de otras opciones como Vite + React o un framework diferente?",
+          "answer": "Por el sistema de rutas y su integración con Amplify",
+          "insights": "La decisión se basó en ventajas técnicas específicas: el sistema de rutas automático de Next.js y su compatibilidad optimizada con AWS Amplify para despliegue simplificado.",
+          "context": "Proyecto personal de gestión de eventos que requería una solución robusta y fácil de desplegar."
+        },
+        "document_handling": {
+          "question": "Veo que implementaste funcionalidades de firma digital (react-signature-canvas) y generación de PDFs (jspdf) en el Events Manager. ¿Cuál fue el razonamiento detrás de integrar estas características específicamente en lugar de usar servicios externos para el manejo de documentos?",
+          "answer": "Sobre todo por el tema de costos, además el cliente solo requería una solución a medida",
+          "insights": "Decisión práctica enfocada en optimización de costos y requisitos específicos del cliente. Implementación interna para evitar costos de servicios externos y mayor control sobre la funcionalidad.",
+          "context": "Sistema de gestión de eventos que requería generación de documentos y captura de firmas digitales como parte del flujo de trabajo."
+        }
+      },
+      "key_features": [
+        "Gestión de eventos y reservas",
+        "Sistema de almacén/inventario (warehouse)",
+        "Generación de documentos PDF",
+        "Captura de firmas digitales",
+        "Sistema de confirmación de documentos",
+        "Paginación con Material UI",
+        "Gestión de materiales (bulk material)",
+        "Sistema de comentarios para firmas de managers",
+        "Carga de logos de clientes",
+        "Gestión de colores y modelos"
+      ]
+    },
+    {
+      "name": "club-de-ganadores-front",
+      "full_name": "Rmx21/club-de-ganadores-front",
+      "primary_language": "TypeScript",
+      "framework": "Vite + React",
+      "total_commits": 16,
+      "last_activity": "2025-05-21",
+      "key_technologies": [
+        "Vite",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "React Table (TanStack)",
+        "Axios",
+        "React Router DOM",
+        "Recharts",
+        "xlsx",
+        "react-dropzone",
+        "react-confetti"
+      ],
+      "decision_rationale": {
+        "animation_library": {
+          "question": "En el proyecto Club de Ganadores, implementaste animaciones con Framer Motion y funcionalidades de ranking. ¿Qué te llevó a elegir Framer Motion sobre otras librerías de animación como React Spring o CSS puro para las animaciones del ranking?",
+          "answer": "La verdad no tenía mucha experiencia sobre animación, fue una recomendación que obtuve",
+          "insights": "Decisión basada en recomendaciones externas debido a experiencia limitada en animaciones. Muestra apertura a aprender nuevas tecnologías y confiar en la experiencia de otros desarrolladores.",
+          "context": "Sistema de ranking que requería animaciones atractivas para mejorar la experiencia del usuario."
+        },
+        "file_handling": {
+          "question": "¿Cuál fue la razón específica para permitir la carga de archivos Excel en lugar de usar formularios tradicionales para la entrada de datos en el sistema de ranking?",
+          "answer": "Porque los usuarios finales ya tenían un template en excel donde capturaban su información y son muchos datos",
+          "insights": "Decisión orientada a la experiencia del usuario (UX). Mantener el flujo de trabajo existente de los usuarios con templates Excel, especialmente considerando el volumen grande de datos a procesar.",
+          "context": "Sistema de gestión de datos masivos donde los usuarios ya tenían procesos establecidos con Excel."
+        }
+      },
+      "key_features": [
+        "Sistema de ranking con animaciones",
+        "Carga masiva de datos via Excel",
+        "Visualización de datos con gráficos (Recharts)",
+        "Gestión de archivos con drag & drop",
+        "Animaciones de celebración (confetti)",
+        "Sistema de gestión modular",
+        "Interfaz responsiva con Tailwind CSS",
+        "Navegación con React Router",
+        "Tablas interactivas con TanStack Table"
+      ]
+    }
+  ],
+  "key_insights": {
+    "technical_decision_making": [
+      "Prioriza la optimización de costos en decisiones técnicas",
+      "Valora la compatibilidad y facilidad de integración con servicios de despliegue",
+      "Busca soluciones que respeten los flujos de trabajo existentes de los usuarios",
+      "Muestra apertura a aprender nuevas tecnologías basándose en recomendaciones"
+    ],
+    "preferred_technologies": [
+      "TypeScript para type safety",
+      "Tailwind CSS para estilos",
+      "Next.js para aplicaciones full-stack",
+      "React para interfaces de usuario",
+      "Herramientas modernas de desarrollo (Vite, Drizzle ORM)"
+    ],
+    "problem_solving_approach": [
+      "Enfoque pragmático: soluciones que funcionan y son costo-efectivas",
+      "Consideración del usuario final en las decisiones técnicas",
+      "Implementación de funcionalidades específicas según necesidades del cliente",
+      "Uso de librerías especializadas para funcionalidades complejas"
+    ]
+  },
+  "recommendations_for_future_developers": {
+    "onboarding": [
+      "Revisar estos proyectos como ejemplos de implementación práctica con TypeScript",
+      "Entender la importancia de optimizar costos en decisiones técnicas",
+      "Aprender sobre la integración de sistemas de documentos y firmas digitales"
+    ],
+    "best_practices": [
+      "Evaluar siempre el flujo de trabajo existente de los usuarios antes de implementar nuevas funcionalidades",
+      "Considerar la facilidad de despliegue al elegir frameworks",
+      "Buscar recomendaciones de la comunidad cuando se explore territorio desconocido"
+    ]
+  },
+  "metadata": {
+    "interview_duration": "Multiple exchanges",
+    "repositories_with_commits": 2,
+    "total_commits_analyzed": 128,
+    "primary_focus_areas": ["Full-stack development", "Event management systems", "Data visualization", "Document generation"]
+  }
+}
